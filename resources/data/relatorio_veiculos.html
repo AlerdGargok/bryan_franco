@@ -22,140 +22,22 @@
     </header>
         <main class="container">
             <h2>Relatório Geral de Veículos</h2>
-            <table class="table"> 
+            <table class="table" id="tabela"> 
                 <!--Tabela em formato de relatório com pseudo-dados para exibição-->
                 <!--Formato responsivo criado em modelo vertical-->
                 <thead>
                     <tr>
+                        <th>Chave</th>
                         <th>Modelo</th>
                         <th>Marca</th>
                         <th>Cor</th>
                         <th>Fabricação</th>
                         <th>Kilometragem</th>
                         <th>Placa</th>
+                        <th>Opções</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr> 
-                        <td data-label="Modelo">A4 Prestige</td>
-                        <td data-label="Marca">Audi</td>
-                        <td data-label="Cor">Prata</td>
-                        <td data-label="Fabricação">2023</td>
-                        <td data-label="Kilometragem">12.000</td>
-                        <td data-label="Placa">AXX-2023</td>
-                    </tr>
-                    <tr> 
-                        <td data-label="Modelo">R8 RWD</td>
-                        <td data-label="Marca">Audi</td>
-                        <td data-label="Cor">Branca</td>
-                        <td data-label="Fabricação">2021</td>
-                        <td data-label="Kilometragem">30.000</td>
-                        <td data-label="Placa">ATT-2021</td>
-                    </tr>
-                    <tr> 
-                        <td data-label="Modelo">Camaro SS</td>
-                        <td data-label="Marca">Chevrolet</td>
-                        <td data-label="Cor">Azul</td>
-                        <td data-label="Fabricação">2020</td>
-                        <td data-label="Kilometragem">40.000</td>
-                        <td data-label="Placa">APP-2020</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Modelo">Montana Tracker</td>
-                        <td data-label="Marca">Chevrolet</td>
-                        <td data-label="Cor">Marrom</td>
-                        <td data-label="Fabricação">2023</td>
-                        <td data-label="Kilometragem">9.000</td>
-                        <td data-label="Placa">AVV-2023</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Modelo">Onix LT</td>
-                        <td data-label="Marca">Chevrolet</td>
-                        <td data-label="Cor">Vermelha</td>
-                        <td data-label="Fabricação">2020</td>
-                        <td data-label="Kilometragem">39.000</td>
-                        <td data-label="Placa">AOO-2020</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Modelo">Toro Freedom</td>
-                        <td data-label="Marca">Fiat</td>
-                        <td data-label="Cor">Branca</td>
-                        <td data-label="Fabricação">2018</td>
-                        <td data-label="Kilometragem">70.000</td>
-                        <td data-label="Placa">ATT-0901</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Modelo">Ranger</td>
-                        <td data-label="Marca">Ford</td>
-                        <td data-label="Cor">Preta</td>
-                        <td data-label="Fabricação">2022</td>
-                        <td data-label="Kilometragem">36.000</td>
-                        <td data-label="Placa">AZZ-2022</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Modelo">Golf MK7 GTI</td>
-                        <td data-label="Marca">Volkswagen</td>
-                        <td data-label="Cor">Azul</td>
-                        <td data-label="Fabricação">2015</td>
-                        <td data-label="Kilometragem">90.000</td>
-                        <td data-label="Placa">AGG-2015</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Modelo">Polo Track</td>
-                        <td data-label="Marca">Volkswagen</td>
-                        <td data-label="Cor">Prata</td>
-                        <td data-label="Fabricação">2023</td>
-                        <td data-label="Kilometragem">6.000</td>
-                        <td data-label="Placa">APP-2320</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Modelo">Tiguan TSI</td>
-                        <td data-label="Marca">Volkswagen</td>
-                        <td data-label="Cor">Branca</td>
-                        <td data-label="Fabricação">2023</td>
-                        <td data-label="Kilometragem">5.000</td>
-                        <td data-label="Placa">ATT-2320</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Modelo">City LZ</td>
-                        <td data-label="Marca">Honda</td>
-                        <td data-label="Cor">Preta</td>
-                        <td data-label="Fabricação">2022</td>
-                        <td data-label="Kilometragem">34.000</td>
-                        <td data-label="Placa">AHH-2027</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Modelo">Civic Sport</td>
-                        <td data-label="Marca">Honda</td>
-                        <td data-label="Cor">Preta</td>
-                        <td data-label="Fabricação">2018</td>
-                        <td data-label="Kilometragem">42.000</td>
-                        <TD data-label="Placa">ACC-2018</TD>
-                    </tr>
-                    <tr>
-                        <td data-label="Modelo">Duster Intense</td>
-                        <td data-label="Marca">Renault</td>
-                        <td data-label="Cor">Marrom</td>
-                        <td data-label="Fabricação">2020</td>
-                        <td data-label="Kilometragem">70.000</td>
-                        <td data-label="Placa">ADD-2020</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Modelo">Lancer HL</td>
-                        <td data-label="Marca">Mitsubishi</td>
-                        <td data-label="Cor">Prata</td>
-                        <td data-label="Fabricação">2021</td>
-                        <td data-label="Kilometragem">50.000</td>
-                        <td data-label="Placa">ALL-2021</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Modelo">March S</td>
-                        <td data-label="Marca">Nissan</td>
-                        <td data-label="Cor">Vermelha</td>
-                        <td data-label="Fabricação">2021</td>
-                        <td data-label="Kilometragem">60.000</td>
-                        <td data-label="Placa">ANN-2021</td>
-                    </tr>
                 </tbody>
             </table>
             <br><br>
@@ -165,4 +47,36 @@
         &copy; 2023 WebVehicles | Todos os direitos reservados.
     </footer>
 </body>
+<script>
+    const tabela = document.getElementById('tabela');
+	var dados = JSON.parse(localStorage.getItem('dados')) || [];
+
+	function exibircadastro(){
+		dados.forEach((elemento, chave) =>{
+			tabela.innerHTML += `
+		<tr>
+			<td data-label="Chave">${chave}</td>
+            <td data-label="Modelo">${elemento.modelo}</td>
+            <td data-label="Marca">${elemento.marca}</td>
+            <td data-label="Cor">${elemento.cor}</td>
+            <td data-label="Fabricação">${elemento.fab}</td>
+            <td data-label="Kilometragem">${elemento.kilometragem}</td>
+            <td data-label="Placa">${elemento.placa}</td>
+			<td>
+				<a href="./cadastro_veiculos.html?chave=${chave}">Editar</a>
+				<a href="#" onClick="remover(${chave})">Remover</a>
+			</td>
+		</tr>
+			`;
+		})
+	}
+
+	function remover(chave){
+		dados.splice(chave, 1);
+		localStorage.setItem('dados', JSON.stringify(dados));
+		window.location.href= "./relatorio_veiculos.html";
+	}
+
+	exibircadastro();
+</script>
 </html>

@@ -17,6 +17,11 @@ td, th{
     border: 1px solid #ddd;
 }
 
+tbody a{
+    text-decoration: none;
+    color: #e72416;
+}
+
 th{
     background-color: #e72416;
     color: #fff;

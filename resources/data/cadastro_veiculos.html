@@ -23,8 +23,8 @@
     <main>
         <section class="container">
             <h2>Cadastre um novo veículo:</h2><br><br>
-            <p class="inst">Insira as informações do veículo abaixo:<p> 
-            <form><!--Formulario em display flex para cadastro de novos veículos -->
+            <p class="inst">Insira as informações do veículo abaixo:</p> 
+            <form id="form"><!--Formulario em display flex para cadastro de novos veículos -->
             <input type="text" id="modelo" placeholder="Digite o Modelo do Veículo" required>
             <input type="number" id="kilometragem" placeholder="Digite a Kilometragem do Veículo">
             <input list="lista_marcas" id="marca" placeholder="Insira a Marca do Veículo" required>
@@ -32,7 +32,7 @@
                 <option value="Audi"></option>
                 <option value="Chevrolet"></option>
                 <option value="Fiat"></option>
-                <option value="Ford"></option>
+                <option value="Ford"></option>  
                 <option value="Honda"></option>
                 <option value="Mitsubishi"></option>
                 <option value="Nissan"></option>
@@ -43,7 +43,7 @@
             <input type="number" min="1990" max="2024" id="fab" placeholder="Digite o Ano de Fabricação">
             <input type="text" id="placa" placeholder="Digite a Placa do Veículo">
             <button type="reset" id="limpar">Limpar</button>
-            <button type="submit" id="enviar">Cadastrar</button>
+            <button type="submit" id="enviar" onclick="salvarcadastro()">Cadastrar</button>
             </form>
             <br>
         </section>
@@ -54,6 +54,43 @@
     <footer>
         &copy; 2023 WebVehicles | Todos os direitos reservados.
     </footer>
-
 </body>
+<script>
+    const form = document.getElementById('form');
+	const modelo = document.getElementById('modelo');
+	const kilometragem = document.getElementById('kilometragem');
+    const marca = document.getElementById('marca');
+    const cor = document.getElementById('cor');
+    const fab = document.getElementById('fab');
+    const placa = document.getElementById('placa');
+    var dados = JSON.parse(localStorage.getItem('dados')) || [];
+	const key = new URLSearchParams(window.location.search).get('chave');
+
+    function salvarcadastro(){
+		let dtmodelo = modelo.value;
+		let dtkilometragem = kilometragem.value;
+        let dtmarca = marca.value;
+        let dtcor = cor.value;
+        let dtfab = fab.value;
+        let dtplaca = placa.value;
+		
+		if(key){
+			dados[key] = {modelo: dtmodelo, kilometragem: dtkilometragem, marca: dtmarca, cor: dtcor, fab: dtfab, placa: dtplaca};
+		}else{
+			dados.push({modelo: dtmodelo, kilometragem: dtkilometragem, marca: dtmarca, cor: dtcor, fab: dtfab, placa: dtplaca});
+		}
+		
+		localStorage.setItem('dados', JSON.stringify(dados));
+		window.location.href= "./cadastro_veiculos.html";
+	}
+
+	if(key){
+        modelo.value = dados[key].modelo;
+        kilometragem.value = dados[key].kilometragem;
+        marca.value = dados[key].marca;
+        cor.value = dados[key].cor;
+        fab.value = dados[key].fab;
+        placa.value = dados[key].placa;
+	}
+</script>
 </html>
