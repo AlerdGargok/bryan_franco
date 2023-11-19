@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>WebVehicles Multimarcas | Cadastro de Veículos</title>
+</head>
+<body>
+    <header>
+        <h1>WebVehicles Multimarcas</h1>
+        <nav class="menu">
+            <ul>
+                <li><a class="menuitem" href="../../index.html">Página Inicial</a></li>
+                <li><a class="menuitem" href="./galeria_fotos.html">Galeria de Fotos</a></li>
+                <li><a class="menuitem" href="./cadastro_veiculos.html">Cadastro de Veículos</a></li>
+                <li><a class="menuitem" href="./relatorio_veiculos.html">Relatório de Veículos</a></li>
+                <li><a class="menuitem" href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Cadastre um novo veículo:</h2><br><br>
+            <p class="inst">Insira as informações do veículo abaixo:<p> 
+            <form><!--Formulario em display flex para cadastro de novos veículos -->
+            <input type="text" id="modelo" placeholder="Digite o Modelo do Veículo" required>
+            <input type="number" id="kilometragem" placeholder="Digite a Kilometragem do Veículo">
+            <input list="lista_marcas" id="marca" placeholder="Insira a Marca do Veículo" required>
+            <datalist id="lista_marcas"> <!--Lista de Marcas Disponíveis-->
+                <option value="Audi"></option>
+                <option value="Chevrolet"></option>
+                <option value="Fiat"></option>
+                <option value="Ford"></option>
+                <option value="Honda"></option>
+                <option value="Mitsubishi"></option>
+                <option value="Nissan"></option>
+                <option value="Renault"></option>
+                <option value="Volkswagen"></option>
+            </datalist>
+            <input type="text" id="cor" placeholder="Digite a Cor do Veículo">
+            <input type="number" min="1990" max="2024" id="fab" placeholder="Digite o Ano de Fabricação">
+            <input type="text" id="placa" placeholder="Digite a Placa do Veículo">
+            <button type="reset" id="limpar">Limpar</button>
+            <button type="submit" id="enviar">Cadastrar</button>
+            </form>
+            <br>
+        </section>
+    </main>
+    <span>
+        &nbsp;
+    </span>
+    <footer>
+        &copy; 2023 WebVehicles | Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>

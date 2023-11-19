@@ -1,0 +1,73 @@
+.container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h2, .inst{
+margin: 0px;
+padding-bottom: 0px;
+font-family: Cambria;
+font-weight: bold;
+font-size: 1.5em;
+color: #e72416;
+max-width: 100%;
+text-align: center;
+}
+
+.inst{
+margin: 0px;
+padding: 0px;
+font-size: 1em;
+color: #fff;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+input, button{
+    font-size: 10px;
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#marca, #cor, #fab {
+    flex-basis: 30%;
+}
+
+#placa{
+    flex-basis: 50%;
+}
+
+button{
+    border: 0px;
+    flex-basis: 6%
+}
+
+#enviar{
+    color: #fff;
+    background-color: rgb(0, 81, 255);
+}
+
+#enviar:hover{
+    background-color: rgb(4, 0, 255);
+}
+
+#limpar{
+    color: #fff;
+    background-color: #e72416;
+}
+
+#limpar:hover{
+    background-color: #af0606;
+}
+

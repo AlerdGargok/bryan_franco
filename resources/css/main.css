@@ -1,0 +1,125 @@
+.titulo {
+    margin-left: 5px;
+    font-family: Cambria;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.foto_carro{
+    max-width: 80%;
+    margin-left: 20%;   
+    margin-right: 20%;
+    border: 3px;
+    border-style: double;
+    box-shadow: 0px 5px 10px #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sec_nvcr {
+    margin: 0px;
+    padding-bottom: 10px;
+    font-family: Cambria;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #e72416;
+    max-width: 100%;
+    text-align: center;
+}
+
+.desc_carro{
+    overflow: break-word;
+    padding: 0px;
+    margin-top: 0px;
+    background-color: #000000;
+    max-width: 80%;
+    height: fit-content;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: double;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0px 5px 10px #000;
+}
+
+.desc{
+    margin-left: 5px;
+    font-family: Cambria;
+    font-size: 0.9em;
+    color: #a59f9f;
+}
+
+.preco {
+    margin-left: 5px;
+    font-family: Cambria;
+    font-size: 1.1em;
+    color: #fde403;
+    font-weight: bold;
+}
+
+#marcas{
+    margin: 0px;
+    padding-bottom: 10px;
+    font-family: Cambria;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #e72416;
+    max-width: 100%;
+    text-align: center;
+}
+
+.sec_novos{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-basis: 75%;
+}
+
+.sec_marcas{
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+
+.logo_marca {
+    max-width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.desc_logo{
+    max-width: 100%;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div_logo{
+    max-width: 100%;
+    max-height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin: 0px;
+
+}
+
+.div_logo:hover{
+    .desc_logo{
+        font-weight: bold;
+        color: #e72416;
+    }
+    .logo_marca{
+        opacity: 0.6;
+    }
+}
