@@ -1,6 +1,9 @@
 <!--Alterações de JS:
-Página de Cadastro de veículos/Relatório de Veículos: Aplicado JS para tornar o formulário funcional e armazenar as informações cadastradas na tabela da página de relatório, utilizando os ids
-de cada coluna e uma chave de cadastro;
+Arquivos cadastro_veículos.html/relatorio_veiculos.html: Aplicado JS interno para tornar o formulário funcional e armazenar as informações cadastradas na tabela da página de relatório, 
+utilizando os ids de cada coluna e uma chave de cadastro;
+
+Arquivo script.js e botão presente em todas as páginas: Botão para alterar modo de exibição das páginas: Aplicado JS para criar uma função de alterar a cor de fundo das páginas na classe <body>, 
+alternado entre modo escuro e modo claro, a opção escolhida pelo usuário é armazenada e aplicada no carregamento das demais páginas;
 -->
 
 <!DOCTYPE html>
@@ -24,6 +27,7 @@ de cada coluna e uma chave de cadastro;
                 <li><a class="menuitem" href="resources/data/contato.html">Contato</a></li>
             </ul>
         </nav>
+        <button class="exib" onclick="modoclaro()">Alternar Modo de Exibição</button>
     </header>
         <main class="container"> <!--Container para exibir as seções da página inicial-->
         <section class="sec_novos">
@@ -133,4 +137,5 @@ de cada coluna e uma chave de cadastro;
         &copy; 2023 WebVehicles | Todos os direitos reservados.
     </footer>
 </body>
+<script src="././resources/script.js"></script>
 </html>

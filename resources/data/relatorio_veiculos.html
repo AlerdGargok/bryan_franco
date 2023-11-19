@@ -19,6 +19,7 @@
                 <li><a class="menuitem" href="./contato.html">Contato</a></li>
             </ul>
         </nav>
+        <button class="exib" onclick="modoclaro()">Alternar Modo de Exibição</button>
     </header>
         <main class="container">
             <h2>Relatório Geral de Veículos</h2>
@@ -47,6 +48,7 @@
         &copy; 2023 WebVehicles | Todos os direitos reservados.
     </footer>
 </body>
+<script src="../script.js"></script>
 <script>
     const tabela = document.getElementById('tabela');
 	var dados = JSON.parse(localStorage.getItem('dados')) || [];

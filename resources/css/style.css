@@ -70,6 +70,28 @@ footer {
     font-size: 10px;
 }
 
+.light-mode{
+    body {
+        background-color: #fff;
+    }
+}
+
+.exib {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 9px;
+    background-color: #e72416;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.exib:hover {
+    background-color: #9c180f;
+}
+
 /*Reponsividade de ajuste do menu*/
 
 @media (max-width:720px){
